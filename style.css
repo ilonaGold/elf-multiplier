@@ -1,0 +1,69 @@
+:root {
+  --wine-red: #c7375f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --snow: #f0f4f7;
+}
+
+html,
+body {
+  margin: 2em 5em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: var(--dark-green);
+  background: var(--snow) url("images/christmas-elf.png") no-repeat;
+}
+
+.elf-hangout-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  min-width: 240px;
+  min-height: 240px;
+  max-width: 5ch;
+  overflow-y: scroll;
+  background-color: var(--wine-red);
+  padding: 1em 2em;
+  opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  background: var(--light-green);
+  color: var(--snow);
+  padding: 0.5em 1.4em;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.elf {
+  font-size: 30px;
+}
+
+button {
+  padding: 1em 2em;
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--dark-green);
+  color: var(--snow);
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
