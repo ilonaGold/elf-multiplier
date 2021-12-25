@@ -15,7 +15,9 @@ function duplicateElf(){
         elf.textContent = "";
         zone.style.backgroundImage = "url('images/card.png')";
         zone.style.backgroundSize = "cover";
+        zone.style.overflowY = "hidden";
         document.body.style.backgroundRepeat = "repeat-x";
+        btn.style.display = "none";
     }
 }
 
